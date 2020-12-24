@@ -1,13 +1,7 @@
 import cv2
 
 cap = cv2.VideoCapture(0)
-glass = cv2.imread("glass.png")
-cigar = cv2.imread("cigar.png")
-mustache = cv2.imread("mustache.png")
-
-
 face_cascade = cv2.CascadeClassifier('face.xml')
-
 while cap.isOpened():
     ret, frame = cap.read()
     if ret:
